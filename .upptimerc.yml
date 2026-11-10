@@ -29,3 +29,7 @@ status-website:
       href: https://linhnam.vn
     - title: GitHub
       href: https://github.com/linhnam-group
+
+# Lệch 2 phút khỏi mốc tròn để tránh giờ cao điểm của bộ hẹn giờ GitHub Actions
+workflowSchedule:
+  uptime: "2-59/5 * * * *"
