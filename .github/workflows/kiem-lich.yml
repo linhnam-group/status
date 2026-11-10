@@ -1,0 +1,14 @@
+# Tệp chẩn đoán tạm (11/11/2026): kiểm xem GitHub có kích hoạt lịch (schedule) cho repo này không.
+# Xoá khi lịch của Uptime CI đã tự chạy ổn định.
+name: Kiem lich
+on:
+  schedule:
+    - cron: "*/10 * * * *"
+  workflow_dispatch:
+permissions: {}
+jobs:
+  nhip:
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+    steps:
+      - run: date -u
